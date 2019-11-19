@@ -14,7 +14,7 @@ for (let index = 0; index < logos.length; index++) {
                 break;
             case 1:
                 tema = "Vida";
-                document.location.href = "./../views/Vida.html?"+tema+"?Sacrificios"
+                document.location.href = "./../views/categorias.html?"+tema+"?Alfareria"
                 break;
             case 2:
                 tema = "Animales Fantásticos";
