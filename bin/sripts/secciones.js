@@ -17,20 +17,20 @@ for (let index = 0; index < logos.length; index++) {
                 document.location.href = "./../views/categorias.html?"+tema+"?Alfareria"
                 break;
             case 2:
-                tema = "Animales Fantásticos";
-                document.location.href = "./../views/serpiente.html?"+tema
+                tema = "Animales";
+                document.location.href = "./../views/categorias.html?"+tema+"?Serpiente"
                 break;
             case 3:
                 tema = "Encantamientos";
-                document.location.href = "./../views/sacrificios.html?"+tema
+                document.location.href = "./../views/categorias.html?"+tema+"?Sacrificios"
                 break;
             case 4:
                 tema = "Agricultura";
-                document.location.href = "./../views/maiz.html?"+tema
+                document.location.href = "./../views/categorias.html?"+tema+"?Maiz"
                 break;
                 case 5:
-                    tema = "Maravillas Del Oro";
-                    document.location.href = "./../views/pectorales.html?"+tema
+                    tema = "Oro";
+                    document.location.href = "./../views/categorias.html?"+tema+"?Pectorales"
         }
 
         
