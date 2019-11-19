@@ -1,0 +1,137 @@
+
+body {
+    width: 100%;
+
+
+}
+
+header,
+main,
+footer {
+    width: 100%;
+
+}
+body {
+
+    background-image: url("./../../data/fondo.png");
+}
+.main{
+    width: 100%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.recuadroti{
+    display: flex;
+    width: 40%;
+    height: 14%;
+    margin-top: 5%;
+    background: rgb(172, 51, 23);
+    border-radius: 90px;
+    position: absolute;
+    align-items: center;
+    box-shadow: 0px 4px 10px rgb(0, 0, 0);
+}
+
+    .calimadas{
+        font-size: 800%;
+        color:rgb(250, 210, 161);
+        margin-top: -40px;
+        margin-left: 190px;
+        margin-bottom: 0%;
+        position: absolute;
+        font-family: 'Nunito', sans-serif;
+        font-weight: bold;
+        text-shadow: 0px 4px 7px black;
+    }
+
+        .recuadroGran{
+            margin-top: 9%;
+            display: flex;
+            width: 70%;
+            height: 800px;
+            background: white;
+            align-items: center;
+            border-radius: 100px;
+            box-shadow: 0px 4px 10px rgb(0, 0, 0);
+        }
+            .cuadro{
+                display: flex;
+                width: 96%;
+                height: 800px;
+                background: rgb(252, 238, 221);
+                border-radius: 100px;
+                box-shadow: 0px 4px 10px rgb(0, 0, 0);
+            }
+
+                .img{
+                    margin-top: 45%; 
+                    margin-left: 20%;
+                }
+
+            .cuadrodeAbajo{
+                flex-direction: column;
+            }
+            
+                .titulo{
+                    display: flex;
+                    flex-direction: row;
+                    
+                }
+                    .numero{
+                        font-size: 960%;
+                        color:rgb(208,141,73);
+                        margin-top: 10%;
+                        margin-left: 140px;
+                        margin-right: 10px;
+                        margin-bottom: 0%;
+                        font-family: 'Nunito', sans-serif;
+                        font-weight: bold;
+                    }
+                    .contenido{
+                        font-size: 480%;
+                        color:rgb(208,141,73);
+                        margin-top: 13%;
+                        margin-bottom: 0%;
+                        margin-right: 30px;
+                        font-family: 'Nunito', sans-serif;
+                        font-weight: bold;
+                    }
+
+                .texto{
+                    margin-top: 2%;
+                    margin-left: 240px;
+                    width: 50%;
+                    margin-bottom: 0%;
+                    font-size: 240%;
+                    text-align: center;
+                    font-family: 'Nunito', sans-serif;
+                }
+
+                    @media(max-width: 600px){
+                        .recuadroti{
+                            margin-top: 42%;
+                        }
+                        .calimadas{
+                            margin-left: 115px;
+                            font-size: 300%;
+                        }
+                        .texto{
+                            margin-top: 45%;
+                            margin-left: 80px;
+                            width: 60%;
+                            font-size: 150%;
+                        }
+                    }
+
+                .seguirinstrucciones{
+                    margin-top: 6%;
+                    margin-left: 377px;
+                    display: flex;
+                    flex-direction: row;
+                }
+
+                    .adelante{
+                        padding-left: 5%;
+                    }

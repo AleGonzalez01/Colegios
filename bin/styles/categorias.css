@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    user-select: none;
+}
+
+body {
+    height: 100%;
+    overflow: hidden;
+}
+
+.encabezado {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(42,43, 61);
+    height: 50px;
+}
+
+.time {
+    margin-left: 40px;
+    display: inline;
+    color: white;
+    font-size: 30px;
+
+}
+
+.tema {
+    color: white;
+    display: inline;
+}
+
+.iconos {
+    margin-right: 100px;
+
+}
+
+.home {
+    display: inline;
+    width: 30px;
+
+}
+
+.choice {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+
+.right {
+
+    width: 50%;
+    height: auto;
+    background-color: rgb(115, 180, 110);
+}
+
+.wrong {
+    width: 50%;
+
+    background-color: rgb(207, 69, 42);
+}
+
+.charada {
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    color: white;
+    font-size: 250px;
+    transition: font-size .5s ease-in-out;
+    transform: translate(-50%, -50%);
+}
+
+@media(max-width: 1200px) {
+
+    .charada {
+        font-size: 200px;
+        transition: font-size .5s ease-in-out;
+    }
+
+}
+
+@media(max-width: 800px) {
+
+    .charada {
+        font-size: 150px;
+        transition: font-size .5s ease-in-out;
+    }
+
+}

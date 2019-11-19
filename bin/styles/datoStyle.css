@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+}
+
+body{
+    width:100%;
+    height:100vh;
+}
+
+header,main,footer{
+    width:100%;
+    position: relative;
+}
+
+header{
+    width:100%;
+    background: rgb(42, 43, 61);
+    margin: 0 auto;
+}
+
+header div{
+    margin: 0 auto;
+    text-align: center;
+}
+
+header div p{
+    padding: 2%;
+    text-align: center;
+    color:rgb(248, 198, 95);
+    font-size: 500%;
+    font-weight: bold;
+    font-family: 'Nunito', sans-serif;
+    margin: 0 auto;
+}
+
+main{
+    background-image: url(./../../data/fondo.png);
+}
+article{
+    width:100%;
+    display: flex;
+    flex-direction: row;
+}
+
+#imagen{
+    display: flex;
+    width:100%;
+    flex-direction: row;
+    align-items: center;
+}
+
+#imagen img{
+    padding:10%;
+    width:60%;
+    margin: 0 auto;
+    align-items: center;
+    
+}
+
+#letras{
+    width:100%;
+    margin: 0 auto;
+}
+
+
+#titulo{
+    padding: 15%;
+    padding-left: 0%;
+    padding-bottom: 1%;
+    color: white;
+    font-weight: bold;
+    font-family: 'Nunito', sans-serif;
+    font-size: 250%;
+}
+
+#escrito{
+    padding-left: 0%;
+    padding-bottom: 1%;
+    padding-right: 15%;
+    color: white;
+    font-family: 'Nunito', sans-serif;
+    font-size: 150%;
+}
+
+#boton {
+    display: block;
+    margin: auto;
+    width: 30%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    text-align: center;
+    background: rgb(208, 141, 73);
+    margin-top: 2vh;
+    border-radius: 20px;
+    font-weight: bold;
+    font-family: 'Nunito', sans-serif;
+    margin: 0 auto;
+    text-decoration-line: none;
+    color: white;
+    cursor: pointer;
+}
+
+
+
+@media screen and (max-width:800px){
+    #titulo{
+        font-size: 150%;
+    }
+    #escrito{
+        font-size:100%;
+    }
+    
+}
+
+@media screen and (max-width:700px){
+    #titulo{
+        font-size: 150%;
+    }
+    #escrito{
+        font-size:100%;
+    }
+}
+
+@media screen and (max-width:400px){
+    #titulo{
+        font-size: 100%;
+    }
+    #escrito{
+        font-size:10%;
+    }
+}

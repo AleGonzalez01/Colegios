@@ -1,0 +1,103 @@
+
+
+.contenedor{
+    margin-top: 0;
+    margin-left: 30%;
+    width: 40%;
+    background: rgb(172, 51, 23);
+    border-radius: 40px;
+
+ align-items: center;
+ box-shadow: 0px 4px 10px rgb(0, 0, 0);
+}
+.calima{
+    margin-top: 2%;
+    font-size: 300%;
+    color:rgb(250, 210, 161);
+    margin-left: 150px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+    text-shadow: 0px 4px 7px black;
+}
+body{
+    background-image: url("./../../data/fondo.png");
+}
+
+.contenedorTemas {
+    display: flex;
+    margin-top: 50px;
+    flex-flow: row wrap;
+    justify-content: center;
+
+}
+
+
+.tema {
+    display: flex;
+    flex-direction: inline;
+    padding: 40px 40px;
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+    cursor: pointer;
+    
+}
+.tema img{
+    width: 100px;
+    height: 100px;
+    filter: drop-shadow(0px 5px 10px rgb(0, 0, 0));
+}
+.cuadra{
+    width: 300px;
+    height: 80px;
+    background: rgb(208, 141, 73) ;
+    box-shadow: 0px 4px 10px rgb(0, 0, 0);
+    border-radius: 40px;;
+}
+.tex{
+    padding: 5%;
+    color:white;
+}
+/* pantalla mediana */
+@media (max-width: 1200px) {
+
+
+    .tema {
+     
+        padding: 20px 50px;
+      
+    }
+
+}
+
+
+/* pantalla pequeña */
+@media (max-width: 800px) {
+    .tema {
+     
+        padding: 20px 50px;
+      
+    }
+}
+
+.morado{
+    width: 40%;
+    height: 100px;
+    background: rgb(89, 77, 148);
+    align-content: center;
+    border-radius: 300px;
+    margin-left: 30%;
+    margin-top: 40px;
+    box-shadow:0px 4px 10px rgb(0, 0, 0) ;
+}
+
+.title {
+    text-align: center;
+    font-size: 250%;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+    color:  rgb(248, 198, 95);
+    padding-top: 4%;
+    text-shadow:0px 4px 10px rgb(0, 0, 0) ;
+}
+
+
