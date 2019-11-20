@@ -6,6 +6,13 @@
  let sec = 30;
  let eleccion = false;
  let acerto = ""
+//creo el local storage
+
+let palabrasAcertadas = localStorage.getItem("palabrasAcertadas")?localStorage.getItem("palabrasAcertadas"): localStorage.setItem("palabrasAcertadas", 0);
+let palabrasErradas = localStorage.getItem("palabrasErradas")?localStorage.getItem("palabrasErradas"):localStorage.setItem("palabrasErradas", 0);
+console.log(localStorage.getItem("palabrasAcertadas"));
+console.log(localStorage.getItem("palabrasErradas"));
+console.log(window.document.URL);
  tiempoDiv.textContent = sec + "s"
 
  let drawHilo = setInterval(hiloSegundos, 1000)
@@ -55,14 +62,19 @@
      if (event.target == wrong) {
          eleccion = true;
          acerto = false;
+         localStorage.setItem("palabrasErradas", (palabrasErradas + 1));
          sonido2.play();
+
      }
 
      if (event.target == right) {
          eleccion = true;
          acerto = true;
+         localStorage.setItem("palabrasAcertadas", (palabrasAcertadas+1));
          sonido.play();
          console.log("")
+         
+
      }
 
      let retrasador = setTimeout(function () {
@@ -81,12 +93,15 @@
      if (event.clientX >= window.innerWidth / 2) {
          eleccion = true;
          acerto = false;
+         localStorage.setItem("palabrasErradas", (palabrasErradas + 1));
          sonido2.play();
+
      }
 
      if (event.clientX < window.innerWidth / 2) {
          eleccion = true;
          acerto = true
+         localStorage.setItem("palabrasAcertadas", (palabrasAcertadas + 1));
          sonido.play();
      }
 
