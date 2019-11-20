@@ -1,5 +1,4 @@
 
-
 .contenedor{
     margin-top: 0;
     margin-left: 30%;
@@ -11,13 +10,13 @@
  box-shadow: 0px 4px 10px rgb(0, 0, 0);
 }
 .calima{
-    margin-top: 2%;
     font-size: 300%;
     color:rgb(250, 210, 161);
-    margin-left: 150px;
     font-family: 'Nunito', sans-serif;
     font-weight: bold;
     text-shadow: 0px 4px 7px black;
+    text-align: center;
+    padding: 2%;
 }
 body{
     background-image: url("./../../data/fondo.png");
@@ -57,28 +56,6 @@ body{
     padding: 5%;
     color:white;
 }
-/* pantalla mediana */
-@media (max-width: 1200px) {
-
-
-    .tema {
-     
-        padding: 20px 50px;
-      
-    }
-
-}
-
-
-/* pantalla pequeña */
-@media (max-width: 800px) {
-    .tema {
-     
-        padding: 20px 50px;
-      
-    }
-}
-
 .morado{
     width: 40%;
     height: 100px;
@@ -100,4 +77,26 @@ body{
     text-shadow:0px 4px 10px rgb(0, 0, 0) ;
 }
 
+/* pantalla mediana */
+@media (max-width: 1200px) {
+    .tema {
+        padding: 20px 50px;
+    }
+
+}
+
+
+/* pantalla pequeña */
+@media (max-width: 600px) {
+    .tema {
+        padding: 20px 50px;
+    }
+    .calima{
+        font-size:200%;
+    }
+    .title{
+        font-size:150%;
+        padding-top: 10%;
+    }
+}
 

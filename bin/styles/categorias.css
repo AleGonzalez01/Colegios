@@ -66,7 +66,7 @@ body {
     left: 50%;
     top: 50%;
     color: white;
-    font-size: 250px;
+    font-size: 160px;
     transition: font-size .5s ease-in-out;
     transform: translate(-50%, -50%);
 }
