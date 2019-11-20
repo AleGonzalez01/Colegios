@@ -1,13 +1,17 @@
-*{
+* {
     margin: 0;
 }
 
-body{
-    width:100%;
-    height: 100vh;
+.p5Canvas{
+    display: none;
+}
+body {
+    width: 100%;
+    height: 100%;
 }
 
-main{
+main {
+    height: 100%;
     width: 100%;
     align-items: center;
     display: flex;
@@ -15,14 +19,15 @@ main{
     background-image: url(../../data/fondo.png);
 }
 
-.titulo{
+.titulo {
     background-image: url(../../data/CabeceraPalabras.png);
-    width:100%;
+    width: 100%;
     box-shadow: 0px 4px 10px rgb(0, 0, 0);
     border-bottom-left-radius: 90px;
     border-bottom-right-radius: 90px;
 }
-.titulo p{
+
+.titulo p {
     text-align: center;
     font-size: 400%;
     padding: 1%;
@@ -31,82 +36,83 @@ main{
     font-weight: bold;
 }
 
-.cuadroGrande{
+.cuadroGrande {
     margin: 0 auto;
-    background:white;
-    width:70%;
+    background-image: url(./../../data/TexturaFondo.png);
+    width: 70%;
     margin-top: 10%;
     border-radius: 90px;
     box-shadow: 0px 4px 10px rgb(0, 0, 0);
     margin-bottom: 10%;
 }
 
-.contenedorImagen{
+.contenedorImagen {
     display: flex;
-    width:100%;
+    width: 100%;
     flex-direction: row;
     align-items: center;
 }
 
-.contenedorImagen img{
+.contenedorImagen img {
     padding: 15%;
     padding-top: 20%;
     padding-bottom: 2%;
-    width:60%;
+    width: 60%;
     margin: 0 auto;
     align-items: center;
 }
 
-.texto{
+.texto {
     display: flex;
-    width:100%;
+    width: 100%;
     flex-direction: row;
     align-items: center;
 }
 
-.texto p{
+.texto p {
     padding: 15%;
     padding-top: 0%;
     padding-bottom: 5%;
-    width:60%;
+    width: 60%;
     margin: 0 auto;
     align-items: center;
     font-size: 150%;
     font-family: 'Nunito', sans-serif;
     text-align: center;
-    color: rgb(172, 51, 23);;
+    color: rgb(172, 51, 23);
+    ;
 }
 
-.botones{
+.botones {
     display: flex;
-    width:40%;
+    width: 40%;
     flex-direction: row;
     align-items: center;
-    margin:0 auto;
+    margin: 0 auto;
 }
 
-.botones a{
+.botones a {
     text-align: center;
-    width:40%;
+    width: 40%;
     margin: 0 auto;
     align-items: center;
     padding-bottom: 40%;
 }
 
-.cuadroPeque{
+.cuadroPeque {
     display: flex;
-        width: 40%;
-        margin-top: 15%;
-        background: rgb(172, 51, 23);
-        border-radius: 90px;
-        position: absolute;
-        align-items: center;
-        box-shadow: 0px 4px 10px rgb(0, 0, 0);
+    width: 40%;
+    margin-top: 15%;
+    background: rgb(172, 51, 23);
+    border-radius: 90px;
+    position: absolute;
+    align-items: center;
+    box-shadow: 0px 4px 10px rgb(0, 0, 0);
 }
 
-.cuadroPeque p{
+.cuadroPeque p {
     padding: 5%;
-    width:100%;
+    width: 100%;
     margin: 0 auto;
     align-items: center;
     font-size: 400%;
@@ -118,26 +124,30 @@ main{
 }
 
 @media only screen and (max-width: 600px) {
-    .cuadroPeque p{
+    .cuadroPeque p {
         font-size: 100%;
     }
-    .cuadroPeque{
+
+    .cuadroPeque {
         margin-top: 25%;
     }
-    .titulo p{
+
+    .titulo p {
         font-size: 250%;
     }
-    .texto p{
+
+    .texto p {
         font-size: 80%;
     }
-    .cuadroGrande{
+
+    .cuadroGrande {
         margin-top: 20%;
     }
 }
 
 @media only screen and (max-width: 800px) {
-    .cuadroPeque p{
+    .cuadroPeque p {
         font-size: 200%;
     }
-    
+
 }

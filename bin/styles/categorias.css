@@ -85,7 +85,7 @@ body {
 @media(max-width: 800px) {
 
     .charada {
-        font-size: 70px;
+        font-size: 60px;
         transition: font-size .5s ease-in-out;
     }
 
