@@ -3,6 +3,15 @@ let tema = document.querySelector(".topic")
 let boton = document.querySelector("#boton")
 let descripcion = document.querySelector(".descripcion")
 let url = document.location.href
+let sonido;
+
+function preload() {
+  sonido = loadSound('./../../data/AMBIENTAL JUEGO.wav');
+ }
+ function setup() {
+  sonido.setVolume(30);
+  sonido.loop();
+}
 
 
 let charadaActual = 0;
