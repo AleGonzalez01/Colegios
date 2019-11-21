@@ -122,6 +122,17 @@ body {
     text-align: center;
 
     color: #FFFFFF;
-
-
+}
+@media (max-width: 600px) {
+    .encabezado {
+        font-size: 15px;
+    }
+        .palabra {
+           
+            font-size: 30px;
+          
+        
+        }
+    
+    
 }

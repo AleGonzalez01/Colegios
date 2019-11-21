@@ -56,7 +56,7 @@ console.log(window.document.URL);
  }
 
  function setup() {
-     sonido.setVolume(30);
+     sonido.setVolume(40);
      sonido2.setVolume(30);
  }
 

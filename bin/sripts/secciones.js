@@ -3,7 +3,7 @@ let tema = "";
 let sonido;
 
 function preload() {
-  sonido = loadSound('./../../data/AMBIENTAL JUEGO.wav');
+  sonido = loadSound('./../../data/FINAL_01-04.mp3');
  }
  function setup() {
   sonido.setVolume(30);

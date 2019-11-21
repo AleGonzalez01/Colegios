@@ -3,7 +3,7 @@ let btnText = document.querySelector(".btnComenzar")
 let sonido;
 
 function preload() {
-  sonido = loadSound('./../../data/AMBIENTAL JUEGO.wav');
+  sonido = loadSound('./../../data/FINAL_01-01.mp3');
 }
 
 function setup() {

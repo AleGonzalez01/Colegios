@@ -99,13 +99,24 @@ body{
 @media (max-width: 600px) {
     .tema {
         padding: 20px 50px;
+        
     }
     .calima{
-        font-size:200%;
+        font-size:28px;
     }
     .title{
-        font-size:150%;
+        font-size:25px;
         padding-top: 10%;
+    }
+    .morado{
+        width: 200px;
+        margin-left: 70px;
+
+    }
+    .contenedor{
+        margin-left: 100px;
+        
+        
     }
 }
 

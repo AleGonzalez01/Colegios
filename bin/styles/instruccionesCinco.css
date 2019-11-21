@@ -130,7 +130,12 @@ body {
                             font-size: 150%;
                         }
                     }
-
+                    @media only screen and (max-width: 800px) {
+                        .cuadroPeque p {
+                            font-size: 25px;
+                        }
+                    
+                    }
 
             .cuadrodeAbajo{
                 display: flex;
@@ -171,6 +176,6 @@ body {
                         font-weight: bold;
                     }
                     .botones a img{
-                        width: 100px;
-                         height: 100px;
+                        width: 100%;
+                         height: 100%;
                     }

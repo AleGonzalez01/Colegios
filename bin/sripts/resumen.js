@@ -8,7 +8,7 @@ resumen[1].innerHTML = "palabras erroneas: " + localStorage.getItem("palabrasErr
 
 
 function preload() {
-  sonido = loadSound('./../../data/AMBIENTAL JUEGO.wav');
+  sonido = loadSound('./../../data/FINAL_01-04.mp3');
 }
 
 function setup() {
