@@ -16,7 +16,7 @@ footer {
 }
 body {
 
-    background-image: url("./../../data/fondo.png");
+    background-image: url("./../../data/fondo2.png");
 }
 .main{
     width: 100%;
@@ -170,4 +170,7 @@ body {
                         font-family: 'Nunito', sans-serif;
                         font-weight: bold;
                     }
-            
+                    .botones a img{
+                        width: 100px;
+                         height: 100px;
+                    }

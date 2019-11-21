@@ -16,7 +16,7 @@ main {
     align-items: center;
     display: flex;
     flex-direction: column;
-    background-image: url(../../data/fondo.png);
+    background-image: url(../../data/fondo2.png);
 }
 
 .titulo {
@@ -91,12 +91,17 @@ main {
     margin: 0 auto;
 }
 
+
 .botones a {
     text-align: center;
     width: 40%;
     margin: 0 auto;
     align-items: center;
     padding-bottom: 40%;
+}
+.botones a img{
+    width: 100px;
+     height: 100px;
 }
 
 .cuadroPeque {

@@ -3,7 +3,7 @@
     margin-top: 0;
     margin-left: 30%;
     width: 40%;
-    background: rgb(172, 51, 23);
+    background-image: url("./../../data/CabeceraPalabras.png");
     border-radius: 40px;
 
  align-items: center;
@@ -19,7 +19,7 @@
     padding: 2%;
 }
 body{
-    background-image: url("./../../data/fondo.png");
+    background-image: url("./../../data/fondo2.png");
 }
 
 .contenedorTemas {
@@ -43,18 +43,27 @@ body{
 .tema img{
     width: 100px;
     height: 100px;
-    filter: drop-shadow(0px 5px 10px rgb(0, 0, 0));
 }
 .cuadra{
     width: 300px;
     height: 80px;
-    background: rgb(208, 141, 73) ;
+    background-image: url(./../../data/TexturaFondo.png);
+    background-size: cover;
+    background-position: center;
     box-shadow: 0px 4px 10px rgb(0, 0, 0);
     border-radius: 40px;;
+    display: flex;
+    align-items: center;
+}
+.cuadra img{
+    margin-left: 20px;
+    width: 60px;
+    height: 60px;
 }
 .tex{
+    margin-left: 5px;
     padding: 5%;
-    color:white;
+    color:black;
 }
 .morado{
     width: 40%;
