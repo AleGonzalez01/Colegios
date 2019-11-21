@@ -120,4 +120,20 @@ body{
         
     }
 }
+@media (max-height: 600px) {
+    .morado{
+        height:80px ;
+        margin-left: 29%;
+        line-height: 30px;
 
+    }
+    .title{
+        font-size:22px;
+        padding-top: 10%;
+    }
+    .contenedor{
+        margin-left: 29%;
+        
+        
+    }
+}
