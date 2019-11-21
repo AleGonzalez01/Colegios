@@ -1,55 +1,58 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Resumenes</title>
     <link rel="stylesheet" href="./../styles/resumenes.css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
+
 </head>
+
 <body>
-        <main class="main">
-                <div class="recuadroti">
-                    <div class="calimadas">
-                        <p>
-                            Calimadas
-                        </p>
-                    </div>
+
+    <main class="fondo">
+
+        <div class="titulo">
+            Calimadas
+        </div>
+
+        <div class="contenido">
+
+            <div class="estadistica">
+
+                <div class="tituloEst">
+                    Acertadas
                 </div>
-        
-        
-                <div class ="recuadroGran">
-                    <p class = "text">
-                        ¡Resultados!
-                    </p>
-                   <div class = "contenedor">
-                       <p class ="acertadas">
-                           Acertadas
-                       </p>
-                    </div>
-                    <div class ="palabra">
-                        <p>
-                            ggggggggggggggggggggggggggggggggg
-                            
-                        </p>
-                    </div>
-                   <div class = "contenedor">
-                       <p class ="acertadas">
-                           Erradas
-                       </p>
-                   </div>
-                       <div class ="palabra">
-                           <p>
-                                ggggggggggggggggggggggggggggggggg
-                           </p>
-                    </div>
-                      <a  class= "aa" href="./../views/secciones.html" >volver</a>
-                   
-        
+
+                <h1 class="palabra"></h1>
+
+            </div>
+
+            <div class="estadistica">
+
+                <div class="tituloEst">
+                    Erradas
                 </div>
-            </main>
-            <script src="./../../src/p5.js"></script>
-            <script src="./../../src/p5.sound.js"></script>
-            <script src="./../sripts/resumen.js"></script>
+
+                <h1 class="palabra"></h1>
+
+            </div>
+
+            <img class="imagen" src="./../../data/CabeceraPalabras.png">
+
+            <div class="volver">Volver</div>
+
+        </div>
+
+    </main>
+
+
+    <script src="./../../src/p5.js"></script>
+    <script src="./../../src/p5.sound.js"></script>
+    <script src="./../sripts/resumen.js"></script>
 </body>
+
 </html>

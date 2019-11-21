@@ -1,12 +1,23 @@
 let sonido;
-var resumen = document.querySelector(".palabra");
+var resumen = document.querySelectorAll(".palabra");
+var volver = document.querySelector(".volver")
 
-resumen.innerHTML = "palabras acertadas: " + localStorage.getItem("palabrasAcertadas") + ", palabras erroneas" + localStorage.getItem("palabraErrada");
+
+resumen[0].innerHTML = "palabras acertadas: " + localStorage.getItem("palabrasAcertadas")
+resumen[1].innerHTML = "palabras erroneas: " + localStorage.getItem("palabrasErradas");
+
 
 function preload() {
   sonido = loadSound('./../../data/AMBIENTAL JUEGO.wav');
- }
- function setup() {
+}
+
+function setup() {
   sonido.setVolume(30);
   sonido.loop();
 }
+
+volver.addEventListener("click", function(){
+  localStorage.clear();
+  document.location.href="./../../bin/views/secciones.html"
+
+})

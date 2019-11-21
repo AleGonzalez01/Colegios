@@ -1,18 +1,18 @@
-
 let logo = document.querySelector(".logo");
-let btnText = document.querySelector(".linkBtn")
+let btnText = document.querySelector(".btnComenzar")
 let sonido;
 
 function preload() {
   sonido = loadSound('./../../data/AMBIENTAL JUEGO.wav');
- }
- function setup() {
+}
+
+function setup() {
   sonido.setVolume(30);
   sonido.loop();
 }
 
-document.addEventListener("click", function(event){
+btnText.addEventListener("click", function (event) {
 
-  document.location.href="./bin/views/instrucciones.html"
+  document.location.href = "./bin/views/instruccionesDos.html"
 
 })

@@ -1,5 +1,6 @@
 * {
     margin: 0;
+    user-select: none;
 }
 
 /*
@@ -12,149 +13,175 @@
 * * * * * * * { background-color: rgba(255,0,0,.2); }
 * * * * * * * * { background-color: rgba(0,255,0,.2); }
 * * * * * * * * * { background-color: rgba(0,0,255,.2); }*/
-
-
 /*pantalla grande*/
 
-body {
-    width: 100%;
-
-
-}
-
-header,
-main,
-footer {
-    width: 100%;
-    position: relative;
-
-}
-
-#fondo {
-    width: 100%;
-    margin: 0;
-    background-image: url("./../../data/fondo.png");
-    padding: 10px;
-    display: flex;
-    align-items: center;
-}
-
-body {
-
-    background-image: url("./../../data/fondo.png");
-}
-
-
-.logo{
-    display: block;
-    margin: auto;
-    margin-top: 25vh;
-    margin-left: 41%;
-    width: 200px;
-    transition: width .5s ease-in-out;
-}
-
-.interaction {
-
-
-    display: block;
-    margin: auto;
-    width: 200px;
-    height: 50px;
-    text-align: center;
-    background: orange;
-    margin-top: 5vh;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    transition: box-shadow 0.3s ease-in-out;
-    border-radius: 20px;
-}
-
-.interaction:hover {
-    transition: box-shadow 0.3s ease-in-out;
-
-    box-shadow: 0 0 0 5px orange;
-}
-
-
-.linkBtn {
-    font-family: 'Josefin Sans', sans-serif;
-    display: block;
-    padding: 12px 0;
-    font-size: 25px;
-    text-decoration: none;
-    color: white;
-
-}
-
-.linkBtn:hover {
-    text-shadow: 0px 0px 2px #fff, ;
-    text-shadow: 0px 0px 3px #fff;
-
-
-}
-
-.mensajeVoltear{
-    background-color: white;
-    position: fixed;
+html {
     width: 100%;
     height: 100%;
-    display:none;
-    top: 0;
-    left: 0;
 }
 
-
-/*////////////////////////////////////////////////*/
-/*////////////////////////////////////////////////*/
-/*////////////////////////////////////////////////*/
-/*////////////////////////////////////////////////*/
-
-@media (max-width: 600px) {
-
-    .logo{
-      
-        width: 100px;
-        transition: width .5s ease-in-out;
-    }
-}
-.titulo{
-    margin-top: 2%;
-    margin-left: 35%;
-font-size: 400%;
-color: rgb(248, 198, 95);
-font-weight: bold;
-font-family: 'Nunito', sans-serif;
-text-shadow: 0px 4px 7px black;
-
-}
-.recuadroGran{
-    flex-direction: column;
+body {
     display: flex;
+    width: 100%;
+    height: 100%;
+
+    justify-content: center;
+    align-items: center;
+
+
+    background-image: url("./../../data/fondo.png");
+    background-position: center;
+
+}
+
+.content {
+    display: flex;
+    margin-top: 70px;
+    flex-direction: column;
     width: 80%;
     height: 500px;
-    background:white;
-    border-radius: 50px;
-    box-shadow: 0px 4px 10px rgb(0, 0, 0);
-    margin-left: 10%;
-    margin-top: 2%;
+
+    align-items: center;
+    transition: margin-top 0.5s ease-in-out;
 }
-.recuadroti{
-    display: flex;
-    width: 80%;
-    height: 18%;
-    margin-top: 0%;
-    background: rgb(172, 51, 23);
-    border-radius:40px;
-    position: absolute;
- align-items: center;
- box-shadow: 0px 4px 10px rgb(0, 0, 0);
- position: absolute;
-}
-.calimadas{
-    font-size: 500%;
-    color:rgb(250, 210, 161);
-    margin-left: 370px;
-    font-family: 'Nunito', sans-serif;
+
+.titulo {
+
+    width: 100%;
+
+    font-family: Nunito;
+    font-style: normal;
     font-weight: bold;
-    text-shadow: 0px 4px 7px black;
+    font-size: 50px;
+    text-align: center;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.48);
+    color: #F8C65F;
+    transition: font-size 0.5s ease-in-out;
+
+}
+
+
+.tarjeta {
+    display: flex;
+    flex-direction: column;
+    margin-top: -20px;
+    width: 80%;
+    height: 100%;
+    border-radius: 80px;
+    background-image: url("./../../data/TexturaFondo.png");
+    background-size: cover;
+    background-position: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.encabezado {
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 45px;
+    text-align: center;
+    line-height: 80px;
+    color: #FAD2A1;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+    background: #AC3317;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 72px;
+    width: 250px;
+    height: 80px;
+    z-index: 2;
+}
+
+.logo {
+    margin: auto 0;
+    margin-top: 50px;
+    height: 30%;
+}
+
+.descripcion {
+
+
+    width: 70%;
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    text-align: center;
+    color: #44240F;
+
+}
+
+.btnComenzar {
+    margin: auto 0;
+
+    width: 220px;
+    height: 50px;
+    background: #D08D49;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.54);
+    border-radius: 50.5px;
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 50px;
+    text-align: center;
+    color: #FFFFFF;
+    cursor: pointer;
+   
+
+}
+
+
+
+
+.p5Canvas {
+    display: none;
+}
+
+@media (min-width:800px) {
+    .tarjeta {
+        width: 500px;
+    }
+}
+
+@media (max-width:1000px) {
+    body {
+
+        align-items: center;
+        transition: align-items 0.5s ease-in-out;
+
+    }
+
+    .content {
+
+        margin-top: 0px;
+        transition: margin-top 0.5s ease-in-out;
+    }
+
+    .titulo {
+
+        font-size: 30px;
+        transition: font-size 0.5s ease-in-out;
+    }
+
+}
+
+
+@media (max-height:500px) {
+    body {
+
+        align-items: flex-start;
+        transition: align-items 0.5s ease-in-out;
+
+
+    }
+
+    .content {
+
+        margin-top: 30px;
+
+        transition: margin-top 0.5s ease-in-out;
+
+    }
+
 }

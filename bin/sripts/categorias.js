@@ -6,10 +6,13 @@
  let sec = 30;
  let eleccion = false;
  let acerto = ""
-//creo el local storage
 
-let palabrasAcertadas = localStorage.getItem("palabrasAcertadas")?localStorage.getItem("palabrasAcertadas"): localStorage.setItem("palabrasAcertadas", 0);
-let palabrasErradas = localStorage.getItem("palabrasErradas")?localStorage.getItem("palabrasErradas"):localStorage.setItem("palabrasErradas", 0);
+
+ //creo el local storage
+let palabrasAcertadas = localStorage.getItem("palabrasAcertadas")?localStorage.getItem("palabrasAcertadas"):0;
+let palabrasErradas   = localStorage.getItem("palabrasErradas")?localStorage.getItem("palabrasErradas"):0;
+localStorage.setItem("palabrasAcertadas", palabrasAcertadas);
+localStorage.setItem("palabrasErradas", palabrasErradas);
 console.log(localStorage.getItem("palabrasAcertadas"));
 console.log(localStorage.getItem("palabrasErradas"));
 console.log(window.document.URL);
@@ -62,7 +65,7 @@ console.log(window.document.URL);
      if (event.target == wrong) {
          eleccion = true;
          acerto = false;
-         localStorage.setItem("palabrasErradas", (palabrasErradas + 1));
+         localStorage.setItem("palabrasErradas", ( parseInt(palabrasErradas) + 1));
          sonido2.play();
 
      }
@@ -70,7 +73,7 @@ console.log(window.document.URL);
      if (event.target == right) {
          eleccion = true;
          acerto = true;
-         localStorage.setItem("palabrasAcertadas", (palabrasAcertadas+1));
+         localStorage.setItem("palabrasAcertadas", ( parseInt(palabrasAcertadas) + 1 ));
          sonido.play();
          console.log("")
          
@@ -93,7 +96,7 @@ console.log(window.document.URL);
      if (event.clientX >= window.innerWidth / 2) {
          eleccion = true;
          acerto = false;
-         localStorage.setItem("palabrasErradas", (palabrasErradas + 1));
+         localStorage.setItem("palabrasErradas", ( parseInt(palabrasErradas) + 1));
          sonido2.play();
 
      }
@@ -101,7 +104,7 @@ console.log(window.document.URL);
      if (event.clientX < window.innerWidth / 2) {
          eleccion = true;
          acerto = true
-         localStorage.setItem("palabrasAcertadas", (palabrasAcertadas + 1));
+         localStorage.setItem("palabrasAcertadas", ( parseInt(palabrasAcertadas) + 1 ));
          sonido.play();
      }
 

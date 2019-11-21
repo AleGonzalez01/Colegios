@@ -111,7 +111,7 @@ switch (tituloActual) {
             if (palabraActual == "cacique") {
                 charadaActual = 1
                 descripcion.textContent = "Los caciques tenían diferentes mujeres a su alrededor. En esta relación principalmente rige la fidelidad entre él y sus féminas. "
-                document.getElementById('imagen').innerHTML="<img src=./../../data/feliz.png>"
+                document.getElementById('imagen').style.backgroundImage = 'url("./../../data/caciqueFondo.png")'
             }
             if (palabraActual == "agricultora") {
                 charadaActual = 2
